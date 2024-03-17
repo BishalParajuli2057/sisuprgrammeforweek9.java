@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Sisuprgrammeforweek9java"
         tools:targetApi="31">
         <activity
+            android:name=".ListUserInTextViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".UserStorage"
             android:exported="false" />
         <activity
