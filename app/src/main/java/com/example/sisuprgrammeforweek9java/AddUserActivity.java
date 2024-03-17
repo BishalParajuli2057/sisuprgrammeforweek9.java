@@ -4,12 +4,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioGroup;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 
 public class AddUserActivity extends AppCompatActivity {
 
@@ -33,7 +29,7 @@ public class AddUserActivity extends AppCompatActivity {
         String lastName = editLastName.getText().toString();
         String email = editEmail.getText().toString();
         int selectedId = radioDegreeProgram.getCheckedRadioButtonId();
-        String degreeProgram = "";
+        String degreeProgram = null;
         if(selectedId == R.id.seRadioButton) {
             degreeProgram = "Software Engineering";
         } else if(selectedId == R.id.imRadioButton) {

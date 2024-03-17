@@ -1,5 +1,6 @@
 package com.example.sisuprgrammeforweek9java;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -33,6 +34,7 @@ public class User extends AppCompatActivity {
     private String email;
     private String degreeProgram;
 
+    @SuppressLint("NotConstructor")
     public void User(String firstName, String lastName, String email, String degreeProgram){
         this.firstName = firstName;
         this.lastName = lastName;
